@@ -1,0 +1,335 @@
+@charset "UTF-8";
+@font-face {
+  font-family: 'icomoon';
+  src: url("fonts/icomoon.eot?c67dwa");
+  src: url("fonts/icomoon.eot?c67dwa#iefix") format("embedded-opentype"), url("fonts/icomoon.ttf?c67dwa") format("truetype"), url("fonts/icomoon.woff?c67dwa") format("woff"), url("fonts/icomoon.svg?c67dwa#icomoon") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-vertical_align_top:before {
+  content: "\e900";
+}
+
+.icon-chat-3:before {
+  content: "\e901";
+}
+
+.icon-wechat:before {
+  content: "\e902";
+}
+
+.icon-mobile:before {
+  content: "\e958";
+}
+
+/*
+$toolbar-size: 52px;
+.toolbar {
+  position: fixed;
+  left: 50%;
+  bottom: 5px;
+  margin-left: -$toolbar-size/2;
+}
+
+.toolbar-item, .toolbar-layer {
+  background: url(../imgs/toolbar.png) no-repeat;
+}
+
+.toolbar-item {
+  display: block;
+  position: relative;
+  width: $toolbar-size;
+  height: $toolbar-size;
+  margin-top: 1px;
+  @include transition(background-position 1s);
+  &:hover {
+    .toolbar-layer {
+      @include opacity(1);
+      @include scale(1)
+    }
+  }
+}
+
+.toolbar-item-weixin {
+  @include toolbar-item(-798px, -860px);
+  .toolbar-layer {
+    height: 212px;
+    background-position: 0 0;
+  }
+}
+
+.toolbar-item-feedback {
+  @include toolbar-item(-426px, -488px);
+}
+
+.toolbar-item-app {
+  @include toolbar-item(-550px, -612px);
+  .toolbar-layer {
+    height: 194px;
+    background-position: 0 -222px;
+  }
+}
+
+.toolbar-item-top {
+  @include toolbar-item(-674px, -736px);
+}
+
+.toolbar-layer {
+  position: absolute;
+  right: $toolbar-size - 6;
+  bottom: -10px;
+  width: 172px;
+  @include opacity(0);
+  @include scale(0.01);
+  @include transform-origin(95% 95%);
+  @include transition(all 1s);
+}
+*/
+/*
+$toolbar-size: 52px;
+
+.toolbar-item, .toolbar-btn, .toolbar-icon, .toolbar-text {
+  height: $toolbar-size;
+  width: $toolbar-size;
+}
+
+.toolbar-icon, .toolbar-text {
+  position: absolute;
+  left: 0;
+  color: #fff;
+  text-align: center;
+  @include transition(top 1s);
+}
+
+.toolbar {
+  position: fixed;
+  left: 50%;
+  bottom: 5px;
+  margin-left: -$toolbar-size/2;
+}
+
+.toolbar-item {
+  position: relative;
+  display: block;
+  margin-top: 1px;
+  &:hover {
+    .toolbar-icon {
+      top: -$toolbar-size;
+    }
+    .toolbar-text {
+      top: 0;
+    }
+    .toolbar-layer {
+      @include opacity(1);
+      @include scale(1);
+    }
+  }
+}
+
+.toolbar-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+}
+
+.toolbar-icon {
+  top: 0;
+  background: #d0d6d9;
+  font-size: 30px;
+  line-height: $toolbar-size;
+}
+
+.toolbar-text {
+  top: $toolbar-size;
+  background: #98a1a6;
+  font-size: 12px;
+  padding-top: 12px;
+  line-height: 1.2;
+}
+
+.toolbar-layer {
+  position: absolute;
+  right: $toolbar-size - 6;
+  bottom: -10px;
+  width: 172px;
+  background: url("../imgs/toolbar_img.png") no-repeat;
+  @include opacity(0);
+  @include scale(0.01);
+  @include transform-origin(95% 95%);
+  @include transition(all 1s);
+}
+
+.toolbar-layer-weixin {
+  height: 212px;
+  background-position: 0 0;
+}
+
+.toolbar-layer-app {
+  height: 194px;
+  background-position: 0 -222px;
+}
+*/
+.toolbar {
+  position: fixed;
+  left: 50%;
+  bottom: 5px;
+  margin-left: -26px;
+}
+
+.toolbar-item {
+  position: relative;
+  display: block;
+  width: 52px;
+  height: 52px;
+  margin-top: 1px;
+}
+.toolbar-item:hover .toolbar-btn:before {
+  top: -52px;
+}
+.toolbar-item:hover .toolbar-btn:after {
+  top: 0;
+}
+.toolbar-item:hover:after {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+.toolbar-item:after {
+  content: "";
+  position: absolute;
+  right: 46px;
+  bottom: -10px;
+  width: 172px;
+  background: url("../imgs/toolbar_img.png") no-repeat;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  -webkit-transform: scale(0.01);
+  -moz-transform: scale(0.01);
+  -ms-transform: scale(0.01);
+  -o-transform: scale(0.01);
+  transform: scale(0.01);
+  -webkit-transform-origin: 95% 95%;
+  -moz-transform-origin: 95% 95%;
+  -ms-transform-origin: 95% 95%;
+  -o-transform-origin: 95% 95%;
+  transform-origin: 95% 95%;
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.toolbar-item-weixin:after {
+  content: "";
+  height: 212px;
+  background-position: 0 0;
+}
+.toolbar-item-weixin .toolbar-btn:before {
+  content: "\e902";
+}
+.toolbar-item-weixin .toolbar-btn:after {
+  content: "公众\A账号";
+}
+
+.toolbar-item-feedback .toolbar-btn:before {
+  content: "\e901";
+}
+.toolbar-item-feedback .toolbar-btn:after {
+  content: "意见\A反馈";
+}
+
+.toolbar-item-app:after {
+  content: "";
+  height: 194px;
+  background-position: 0 -222px;
+}
+.toolbar-item-app .toolbar-btn:before {
+  content: "\e958";
+}
+.toolbar-item-app .toolbar-btn:after {
+  content: "app\A下载";
+}
+
+.toolbar-item-top .toolbar-btn:before {
+  content: "\e900";
+}
+.toolbar-item-top .toolbar-btn:after {
+  content: "返回\A顶部";
+}
+
+.toolbar-btn {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.toolbar-btn:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #fff;
+  text-align: center;
+  font-size: 30px;
+  background: #d0d6d9;
+  line-height: 52px;
+  height: 52px;
+  width: 52px;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -ms-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s;
+}
+.toolbar-btn:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 52px;
+  color: #fff;
+  text-align: center;
+  font-size: 12px;
+  background: #98a1a6;
+  line-height: 1.2;
+  height: 52px;
+  width: 52px;
+  padding-top: 12px;
+  -webkit-transition: top 1s;
+  -moz-transition: top 1s;
+  -ms-transition: top 1s;
+  -o-transition: top 1s;
+  transition: top 1s;
+  white-space: pre;
+}

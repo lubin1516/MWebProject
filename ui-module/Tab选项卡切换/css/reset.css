@@ -1,0 +1,38 @@
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #2aabd2;
+}
+
+body, div, dl, dt, dl, ul, li, h1, h2, h3, h4, h5, h6, input, form, a, p, textarea {
+    margin: 0;
+    padding: 0;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+ol, li, ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: #fff;
+}
+
+img {
+    border: none;
+    display: block;
+}
+
+.clearFloat {
+    zoom: 1;
+}
+
+.clearFloat:after {
+    display: block;
+    height: 0;
+    clear: both;
+    content: "";
+    visibility: hidden;
+}
